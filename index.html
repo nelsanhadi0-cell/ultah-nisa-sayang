@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Golden Age - 20th</title>
+    <link rel="stylesheet" href="ultah.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Montserrat:wght@300;500&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <audio id="bgMusic" loop>
+        <source src="musik_romantis.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="scroll-container">
+        
+        <section class="section hero">
+            <div class="parallax-bg" style="background-image: url('foto_utama.jpg');"></div>
+            <div class="overlay-dust"></div>
+            <div class="hero-content">
+                <p class="fade-in">HAPPY BIRTHDAY</p>
+                <h1 class="glimmer-text">refi aprilia fadzilatunnisa</h1>
+                <div class="elegant-line"></div>
+                <p class="date">04 . 16 . 2026</p>
+            </div>
+            <div class="scroll-indicator">Scroll to Explore</div>
+        </section>
+
+        <section class="section gallery">
+            <div class="texture-overlay"></div>
+            <div class="container">
+                <h2 class="section-title">Sweet twenty</h2>
+                <div class="masonry-grid">
+                    <div class="grid-item tall" style="background-image: url('foto1.jpg');"></div>
+                    <div class="grid-item wide" style="background-image: url('foto2.jpg');"></div>
+                    <div class="grid-item" style="background-image: url('foto3.jpg');"></div>
+                    <div class="grid-item" style="background-image: url('foto4.jpg');"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section achievements">
+            <div class="gold-gradient-bg"></div>
+            <div class="container flex-split">
+                <div class="text-side">
+                    <span class="badge">for you</span>
+                    <h3>Happy birthday my dear</h3>
+                    <p>"Selamat hari lahir, Sayang.
+
+Angka 20 bukan hanya tentang menjadi dewasa, tapi tentang merayakan betapa hebatnya kamu sudah bertahan dan tumbuh sejauh ini. Terima kasih sudah lahir ke dunia, terima kasih sudah menjadi bagian dari hidupku, dan terima kasih sudah mengizinkanku menjadi salah satu saksi perjalananmu.
+
+Di hari spesialmu ini, aku tidak minta banyak hal—aku hanya ingin kamu tahu bahwa kamu sangat dicintai, hari ini dan selamanya."</p>
+                </div>
+                <div class="image-side">
+                    <div class="frame-gold">
+                        <img src="foto_momen.jpg" alt="Your Moment">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section message">
+            <div class="container">
+                <h3 class="cursive-title">The first on my mind</h3>
+                <div class="letter-elegant">
+                    <p>"Di hari kelahiranmu yang ke-20 ini, doaku tidak hanya sekadar kata-kata manis yang terbang bersama angin. Aku berdoa agar Tuhan selalu menjaga binar di matamu, agar ia tak pernah redup meski dunia mungkin sedang tidak ramah. Aku berdoa agar hatimu selalu dilapangkan, agar setiap kekecewaan hanya menjadi pupuk bagi kedewasaanmu, dan setiap kebahagiaan menjadi syukur yang tak putus.
+
+Semoga langkahmu menuju impianmu dibukakan jalan yang selebar-lebarnya. Aku tahu kamu punya mimpi yang besar, dan aku berdoa agar pundakmu dikuatkan untuk memikul tanggung jawab baru sebagai orang dewasa. Jangan pernah merasa sendirian, karena di setiap sujud dan langkahmu, ada doaku yang diam-diam menyertai.
+
+Jadilah wanita yang tidak hanya cantik rupanya—karena itu sudah pasti—tapi juga cantik jiwanya, yang tetap rendah hati meski setinggi apa pun kamu terbang nanti. Aku berharap dunia memberimu banyak alasan untuk tersenyum setiap harinya, sesederhana caramu membuatku tersenyum hanya dengan memikirkanmu. Selamat ulang tahun, Sayang. Semoga aku tetap diizinkan untuk melihatmu tumbuh menjadi versi terbaikmu, tahun demi tahun."</p>
+                    <div class="mini-collage">
+                        <img src="Foto4.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section surprise">
+            <div class="overlay-dark"></div>
+            <div class="container qr-wrap">
+                <h2 class="gold-text">One Last Secret...</h2>
+                <p class="romantic-instruction">"Sebelum halaman ini berakhir, aku punya satu rahasia kecil untukmu..."</p>
+                <p class="romantic-instruction">"scan ya sayangku"</p>
+                
+                <div class="qr-glow-box">
+                    <img src="Foto_qr.png" alt="QR Code Hati" class="qr-image">
+                </div>
+
+                <div class="closing-note">
+                    <p>I Love You, Nisa sayang.</p>
+                    <button class="btn-shine" onclick="toggleMusic()">Play Our Song 🎵</button>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        const audio = document.getElementById('bgMusic');
+        function toggleMusic() {
+            if (audio.paused) { audio.play(); } else { audio.pause(); }
+        }
+    </script>
+</body>
+</html>
